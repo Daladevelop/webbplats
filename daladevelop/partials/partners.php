@@ -18,7 +18,12 @@
                 <ul class="partner-list">
                     <?php while ( $partners->have_posts() ) : $partners->the_post(); ?>
                         <li class="partner">
-                            <?php the_post_thumbnail(); ?>
+                            <?php
+                                $url = get_field( 'url' );
+                                $thumbnail = get_the_post_thumbnail();
+
+                                echo $url ? '<a href="' . $url . '">' . $thumbnail . '</a>' : $thumbnail;
+                            ?>
 
                             <span class="partner-contribution">
                                 <?php the_field( 'contribution' ); ?>
