@@ -14,7 +14,7 @@
 
                     if ( isset( $json[ 'data' ] ) && count( $json[ 'data' ] ) > 0 ) {
                         foreach ( $json[ 'data' ] as $image ) {
-                            $instagram .= '<div class="column-33 mq1-column-16"><a href="' . $image[ 'link' ] . '"><img src="' . esc_url( $image[ 'images' ][ 'standard_resolution' ][ 'url' ] ) . '" width="612" height="612" alt="" /></a></div>';
+                            $instagram .= '<div class="column-33 mq1-column-16"><a href="' . $image[ 'link' ] . '"><img src="' . esc_url( $image[ 'images' ][ 'low_resolution' ][ 'url' ] ) . '" width="320" height="320" alt="" /></a></div>';
                         }
 
                         $instagram = '<div class="grids">' . $instagram . '</div>';
