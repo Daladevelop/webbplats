@@ -17,8 +17,13 @@
 }
 
 label {
-	display: none;
+	display: block;
 	margin-bottom: .5rem;
+
+	.gfield_radio & {
+		display: inline-block;
+		margin-left: 1rem;
+	}
 }
 
 input,
@@ -31,6 +36,10 @@ textarea {
 	border-radius: .62rem;
 	font-size: 1rem;
 	font-weight: 500;
+
+	.gfield_radio & {
+		width: auto;
+	}
 }
 
 input[ type="submit" ] {
@@ -44,7 +53,9 @@ input[ type="submit" ] {
 }
 
 .gform_fields {
-	list-style: none;
+	&, ul {
+		list-style: none;
+	}
 }
 
 .comment-form-comment {

@@ -376,8 +376,11 @@ table {
   color: #fff; }
 
 label {
-  display: none;
+  display: block;
   margin-bottom: .5rem; }
+  .gfield_radio label {
+    display: inline-block;
+    margin-left: 1rem; }
 
 input,
 textarea {
@@ -389,6 +392,9 @@ textarea {
   border-radius: .62rem;
   font-size: 1rem;
   font-weight: 500; }
+  .gfield_radio input,
+  .gfield_radio textarea {
+    width: auto; }
 
 input[type="submit"] {
   width: auto;
@@ -399,7 +405,7 @@ input[type="submit"] {
   border-radius: 0;
   text-decoration: underline; }
 
-.gform_fields {
+.gform_fields, .gform_fields ul {
   list-style: none; }
 
 .comment-form-comment {
@@ -529,6 +535,9 @@ input[type="submit"] {
 
 .entry-thumbnail {
   margin-bottom: 1.857142857rem; }
+
+.entry-content ul {
+  margin-left: 1.5em; }
 
 .comments-area {
   margin-top: 6rem; }
