@@ -22,7 +22,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'jag-hatar-henke' ); ?>>
     <div class="container clearfix">
         <header class="main-header">
             <div class="wrapper">
