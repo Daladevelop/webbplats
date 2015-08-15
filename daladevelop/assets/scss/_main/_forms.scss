@@ -1,0 +1,58 @@
+::-webkit-input-placeholder {
+	color: #fff;
+}
+
+:-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #fff;
+}
+
+label {
+	display: none;
+	margin-bottom: .5rem;
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: .62rem;
+	padding: .75rem;
+	background-color: #202c31;
+	color: #fff;
+	border-radius: .62rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+input[ type="submit" ] {
+	width: auto;
+	padding: 0;
+	background-color: transparent;
+	color: map_get( $strang-colors, link );
+	border: none;
+	border-radius: 0;
+	text-decoration: underline;
+}
+
+.gform_fields {
+	list-style: none;
+}
+
+.comment-form-comment {
+	margin-bottom: 0;
+}
+
+.gform_footer,
+.form-submit {
+	margin-top: 0;
+	text-align: right;
+}

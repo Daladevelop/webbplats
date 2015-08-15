@@ -1,0 +1,30 @@
+.section-event-categories {
+	border-top: 1px solid #0c222c;
+}
+
+.event-category {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8.2rem 0 9.1rem;
+	border-bottom: 1px solid #0c222c;
+}
+
+
+.event-category-name {
+	margin-top: 0;
+}
+
+.event-category-image {
+	width: 30%;
+	text-align: center;
+
+	img {
+		width: 75.652174%;
+		border-radius: 50%;
+	}
+}
+
+.event-category-content {
+	width: 66%;
+}

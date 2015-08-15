@@ -1,0 +1,59 @@
+.upcoming-events {
+	ul {
+		list-style: none;
+	}
+}
+
+.upcoming-event,
+.event-details {
+	position: relative;
+	margin-bottom: 1.642857143rem;
+	padding: .8rem .714285714rem;
+	border: 1px dashed #fff;
+
+	&:nth-child( even ) {
+		background-color: #0a1c25;
+	}
+}
+
+.upcoming-event-type {
+	display: block;
+	padding: 0 0 .25em .35em;
+	font-size: 1.285714286rem;
+	line-height: 1;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.upcoming-event-date {
+	width: 13.928571429rem;
+	float: left;
+	font-size: 4.285714286rem;
+	line-height: 1;
+	font-weight: 900;
+
+	.event-details & {
+		display: block;
+		float: none;
+		margin-bottom: .5rem;
+	}
+}
+
+.upcoming-event-description {
+	$lines: 3;
+	$alignment: 7px;
+
+	display: block;
+	display: -webkit-box;
+	height: (14 * ( 18/14 ) * $lines * 1) + 5px;
+	overflow: hidden;
+	margin-bottom: 0;
+	padding-top: $alignment;
+	text-overflow: ellipsis;
+	font-weight: normal;
+
+	max-lines: $lines;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+}

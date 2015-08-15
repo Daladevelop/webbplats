@@ -1,0 +1,54 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+table {
+	width: 100%;
+}
+
+.read-more-link {
+	font-size: .857142857rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Off-Canvas Navigation */
+.container {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	padding: 0 2rem;
+	transition: margin-left .2s;
+
+	.offcanvas & {
+		margin-left: -315px;
+	}
+}
+
+.offcanvas-area {
+	width: 315px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+}
+
+.section-latest-posts {
+	margin-top: 6rem;
+
+	.single & {
+		padding-top: 2rem;
+		border-top: 1px solid #0c222c;
+	}
+}

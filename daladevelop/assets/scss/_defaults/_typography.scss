@@ -1,0 +1,69 @@
+body {
+	background-color: map-get( $strang-colors, body );
+	color: map-get( $strang-colors, font );
+	font-weight: 100;
+}
+
+p {
+	margin: 1.5em 0;
+}
+
+a {
+	color: map-get( $strang-colors, link );
+	text-decoration: underline;
+	transition: color 0.1s, background-color 0.2s;
+}
+
+h1,
+.alpha {
+	font-size: map-get( $strang-fonts, size1 ) * 1px;
+}
+
+h2,
+.beta {
+	font-size: map-get( $strang-fonts, size2 ) * 1px;
+}
+
+h3,
+.gamma {
+	font-size: map-get( $strang-fonts, size3 ) * 1px;
+}
+
+h4,
+.delta {
+	font-size: map-get( $strang-fonts, size4 ) * 1px;
+}
+
+h5,
+.epsilon {
+	font-size: map-get( $strang-fonts, size5 ) * 1px;
+}
+
+h6,
+.zeta {
+	font-size: map-get( $strang-fonts, size6 ) * 1px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 .56em;
+	line-height: 1;
+	font-style: italic;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	+ p,
+	+ form,
+	+ ul,
+	+ ol {
+		margin-top: 0;
+	}
+	
+	+ img {
+		margin-top: 1em;
+	}
+}

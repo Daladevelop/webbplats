@@ -1,0 +1,42 @@
+@mixin grid-setup( $namespace ) {
+	@each $percentage in map-get( $strang-grids, percentages ) {
+		.#{ $namespace }-#{ floor( $percentage ) } { width: $percentage * 1%; }
+	}
+	
+	.#{ $namespace }-show { display: block; }
+	.#{ $namespace }-hide { display: none; }
+}
+
+@mixin grid-setup-container() {
+	$half-gutter: map-get( $strang-grids, gutter ) / 2;
+
+	.wrapper {
+		max-width: map-get( $strang-grids, width );
+		margin: 0 auto;
+	}
+
+	.grids {
+		overflow: hidden;
+		clear: both;
+		margin-left: map-get( $strang-grids, gutter ) * -1;
+		
+		> * {
+			width: 100%;
+			float: left;
+			margin-bottom: 2em;
+			padding-left: map-get( $strang-grids, gutter );
+	
+			*:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.half-gutter {
+		margin-left: ( map-get( $strang-grids, gutter ) / 2 ) * -1;
+
+		> * {
+			padding-left: map-get( $strang-grids, gutter ) / 2;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.section-instagram {
+	position: relative;
+	margin-bottom: 2em;
+	padding: 1.642857143rem 0;
+	border: 1px solid #0c222c;
+	border-width: 1px 0;
+
+	.grids {
+		margin-bottom: -2em;
+	}
+
+	.instagram-header,
+	.tag-link {
+		display: inline-block;
+		position: absolute;
+		background-color: map-get( $strang-colors, body );
+	}
+
+	.instagram-header {
+		top: -.75rem;
+		left: 0;
+		padding-right: 1em;
+		font-size: inherit;
+		line-height: inherit;
+		font-weight: normal;
+	}
+
+	.tag-link {
+		bottom: -.55rem;
+		right: 0;
+		padding-left: 1rem;
+		color: #fff;
+		font-style: italic;
+		text-decoration: none;
+	}
+}

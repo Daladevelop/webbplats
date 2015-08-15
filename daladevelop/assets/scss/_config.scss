@@ -1,0 +1,50 @@
+// Colors
+$strang-colors: (
+	html: #03080b,
+	body: #07141a,
+	font: #fff,
+	link: #3ae8c9,
+	
+	brand1: #fe6a00,
+	brand2: #3a33e7,
+	brand3: #3ae8c9
+);
+
+// Typography
+$strang-fonts: (
+	base: 14,
+	line: 18,
+	
+	size1: 46,
+	size2: 32,
+	size3: 26,
+	size4: 21,
+	size5: 18,
+	size6: 14
+);
+
+// Grid
+$strang-grids: (
+	width: 1140px,
+	gutter: 2em,
+	
+	breakpoints: (
+		column: 481px,
+		mq1-column: 769px,
+		mq2-column: 1025px,
+		mq3-column: 1200px
+	),
+	
+	percentages: ( 100, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666 )
+);
+
+
+// Sprites
+$logo-spacing: 2px;
+//@import "logo/*.png";
+
+// Setup Sanitize.
+$html-background-color: map-get( $strang-colors, html );
+$root-font-family: "Open Sans", Arial, Helvetica, sans-serif;
+$root-font-size: map-get( $strang-fonts, base ) * 1px;
+$root-line-height: map-get( $strang-fonts, line ) / map-get( $strang-fonts, base );

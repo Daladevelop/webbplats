@@ -1,0 +1,36 @@
+.section-partners {
+	padding: 4rem 0 2rem;
+	border-bottom: 1px solid #0c222c;
+
+	h2 {
+		margin-top: 0;
+	}
+}
+
+.partner-list {
+	list-style: none;
+}
+
+.partner {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 1rem;
+
+	img,
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+	}
+
+	img {
+		margin-right: .75rem;
+	}
+}
+
+.partner-contribution {
+	font-size: .857142857rem;
+	font-weight: normal;
+	font-style: italic;
+}
