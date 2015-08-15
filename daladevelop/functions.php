@@ -117,7 +117,7 @@ function daladevelop_front_page_title( $title ) {
 }
 
 function daladevelop_events_archive_action( $query ) {
-    if ( !$query->is_admin && $query->is_post_type_archive( 'evenemang' ) ) {
+    if ( !$query->is_admin() && $query->is_post_type_archive( 'evenemang' ) && $query->is_main_query() ) {
         $query->set( 'meta_key', 'date' );
         $query->set( 'meta_query', array(
             array(
