@@ -713,7 +713,7 @@ input[type="submit"] {
     display: inline-block;
     vertical-align: middle;
     margin: 0; }
-  .partner img {
+  .partner > *:first-child {
     margin-right: .75rem; }
 
 .partner-contribution {
