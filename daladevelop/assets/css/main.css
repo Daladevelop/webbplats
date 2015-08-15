@@ -454,10 +454,9 @@ input[type="submit"] {
   .header-navigation .menu li ul {
     margin-top: .77rem; }
     .header-navigation .menu li ul a {
-      margin-top: 0;
+      margin-top: .5rem;
       border-bottom: none;
-      font-size: .857142857rem;
-      line-height: 1.666666667; }
+      font-size: .857142857rem; }
   .header-navigation .menu-item-type-posts-item span {
     display: block; }
   .header-navigation .menu-item-type-posts-item a {
