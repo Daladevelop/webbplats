@@ -20,7 +20,8 @@ label {
 	display: none;
 	margin-bottom: .5rem;
 
-	.gfield_radio & {
+	.gfield_radio &,
+	.gfield_checkbox & {
 		display: inline-block;
 		margin-left: 1rem;
 	}
@@ -37,7 +38,8 @@ textarea {
 	font-size: 1rem;
 	font-weight: 500;
 
-	.gfield_radio & {
+	.gfield_radio &,
+	.gfield_checkbox {
 		width: auto;
 	}
 }

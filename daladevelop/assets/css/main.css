@@ -378,7 +378,8 @@ table {
 label {
   display: none;
   margin-bottom: .5rem; }
-  .gfield_radio label {
+  .gfield_radio label,
+  .gfield_checkbox label {
     display: inline-block;
     margin-left: 1rem; }
 
@@ -393,7 +394,9 @@ textarea {
   font-size: 1rem;
   font-weight: 500; }
   .gfield_radio input,
-  .gfield_radio textarea {
+  input .gfield_checkbox,
+  .gfield_radio textarea,
+  textarea .gfield_checkbox {
     width: auto; }
 
 input[type="submit"] {
