@@ -186,7 +186,9 @@ body {
   font-weight: 100; }
 
 p {
-  margin: 1.5em 0; }
+  margin: 1.5em 0;
+  font-weight: 500;
+  font-size: 19px;}
 
 a {
   color: #3ae8c9;
