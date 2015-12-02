@@ -47,34 +47,5 @@
 		<p class="no-comments">Inga nya kommentarer kan lämnas.</p>
 	<?php endif; ?>
 
-	<?php
-		$commenter = wp_get_current_commenter();
-		$req = get_option( 'require_name_email');
-		$aria_req = ($req ? " aria-required ='true'" :'');
-		
-		$comments_args = array(
-			//Redifine textarea
-			'comment_field' =>
-			         '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun') . '</label><br/>
-				 <textarea id="comment" aria-requird="true" placeholder="Skriv in din kommentar!" rows="8" cols="45" wrap="hard"></textarea></p>
-			       
-			'author' =>
-			        '<p class="commet-form-author">' .
-				'<input id="author" placeholder="Ditt för och efternamn" name="author" type="text" value"' . esc_attr( $commenter['comment_author']] .
-				'"size=30"' - $aria_req .' /> . ($req ? '<span style="color:red" class="required">*</span>' : ''). '</p>',
-				
-			'email' =>
-				'<p class = comment-form-email">' .
-				'<input id ="email" placeholder="Din epostaddress!" name="email" type="text" value"" .esc_attr($commenter['comment_author_email'] ) .
-				'" size="30"' . $aria_req . '/>' . ($req ? '<span style="color:red" class=required">*</span>' : '') . '</p>' ,
-
-		 	'url' =>
-				'<p class = comment-form-url">' .
-				'<input id ="url" placeholder="Hemsida" name="url" type="text" value"" .esc_attr($commenter['comment_author_url'] ) .
-				'" size="30"' . $aria_req . '/>' . '</p>' 
-			)
-		),
-	);	      
-			  
-	comment_form(); ?>
+	<?php comment_form(); ?>
 </div>
