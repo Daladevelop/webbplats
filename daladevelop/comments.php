@@ -76,5 +76,5 @@
 		),
 	);	      
 			  
-	comment_form($comments_args); ?>
+	comment_form(); ?>
 </div>
