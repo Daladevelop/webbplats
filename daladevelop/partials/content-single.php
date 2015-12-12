@@ -19,6 +19,11 @@
         <div class="entry-content">
             <?php the_content(); ?>
         </div>
+	<?php
+	    if (is_single() && ( comments_open() || get_comments_number())) :
+	       comments_template();
+	       endif;
+	?>
 
     </article>
 </main>
