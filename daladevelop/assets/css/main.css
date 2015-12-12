@@ -542,7 +542,9 @@ input[type="submit"] {
   margin-bottom: 1.857142857rem; }
 
 .entry-content ul {
-  margin-left: 1.5em; }
+  margin-left: 1.5em; 
+  font-size: 19;
+  font-weight: 500; }
 
 .comments-area {
   margin-top: 6rem; }
