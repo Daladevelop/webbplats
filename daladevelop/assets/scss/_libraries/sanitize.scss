@@ -144,6 +144,7 @@ textarea {
 	cursor: $root-cursor;
 	font: #{$root-font-size}/#{$root-line-height} $root-font-family;
 	text-rendering: $root-text-rendering;
+	overflow: hidden;
 }
 
 // specify the html background color
