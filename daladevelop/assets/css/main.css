@@ -4,7 +4,7 @@
  */
 :root {
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  overflow-y: hidden;
+  overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%; }
@@ -20,8 +20,7 @@ input[type="number"] {
 
 input[type="search"] {
   -webkit-appearance: textfield; }
-  input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-decoration {
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none; }
 
 main {
@@ -87,7 +86,7 @@ textarea {
 :root {
   box-sizing: border-box;
   cursor: default;
-  font: 14px/1.28571 "Open Sans", Arial, Helvetica, sans-serif;
+  font: 14px / 1.28571 "Open Sans", Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility; }
 
 html {
@@ -186,9 +185,7 @@ body {
   font-weight: 100; }
 
 p {
-  margin: 1.5em 0;
-  font-weight: 500;
-  font-size: 19px;}
+  margin: 1.5em 0; }
 
 a {
   color: #3ae8c9;
@@ -223,7 +220,7 @@ h6,
   letter-spacing: 0.2em; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0 0.56em;
+  margin: 1em 0 .56em;
   line-height: 1;
   font-style: italic; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -291,8 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .clearfix {
   *zoom: 1; }
-  .clearfix:before,
-  .clearfix:after {
+  .clearfix:before, .clearfix:after {
     content: '';
     display: table; }
   .clearfix:after {
@@ -324,8 +320,8 @@ table {
   min-height: 100%;
   position: relative;
   padding: 0 2rem;
-  -webkit-transition: margin-left 0.2s;
-          transition: margin-left 0.2s; }
+  -webkit-transition: margin-left .2s;
+          transition: margin-left .2s; }
   .offcanvas .container {
     margin-left: -315px; }
 
@@ -378,12 +374,16 @@ table {
   color: #fff; }
 
 label {
-  display: none;
-  margin-bottom: .5rem; }
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold; }
   .gfield_radio label,
   .gfield_checkbox label {
     display: inline-block;
     margin-left: 1rem; }
+
+li li label {
+  font-weight: normal; }
 
 input,
 textarea {
@@ -392,13 +392,14 @@ textarea {
   padding: .75rem;
   background-color: #202c31;
   color: #fff;
-  border-radius: .62rem;
+  border-radius: 0;
   font-size: 1rem;
   font-weight: 500; }
   .gfield_radio input,
-  .gfield_checkbox input,
-  .gfield_radio textarea,
-  .gfield_checkbox textarea {
+  .gfield_checkbox input, .gfield_radio
+  textarea,
+  .gfield_checkbox
+  textarea {
     width: auto; }
 
 input[type="submit"] {
@@ -422,7 +423,7 @@ input[type="submit"] {
   text-align: right; }
 
 .main-header {
-  margin: 3.71429rem 0 8.35714rem; }
+  margin: 3.714285714rem 0 8.357142857rem; }
   .main-header .wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -451,7 +452,7 @@ input[type="submit"] {
   text-decoration: none; }
 
 .header-navigation {
-  padding: 1.5rem 1.28571rem; }
+  padding: 1.5rem 1.285714286rem; }
   .header-navigation .menu-item-title {
     font-size: 1rem;
     line-height: 1;
@@ -496,8 +497,8 @@ input[type="submit"] {
 .social-links a {
   opacity: .3;
   font: 0/0 a;
-  -webkit-transition: opacity 0.1s;
-          transition: opacity 0.1s; }
+  -webkit-transition: opacity .1s;
+          transition: opacity .1s; }
   .social-links a:hover {
     opacity: .5; }
 
@@ -542,9 +543,7 @@ input[type="submit"] {
   margin-bottom: 1.857142857rem; }
 
 .entry-content ul {
-  margin-left: 1.5em; 
-  font-size: 19px;
-  font-weight: 500; }
+  margin-left: 1.5em; }
 
 .comments-area {
   margin-top: 6rem; }
@@ -562,7 +561,7 @@ input[type="submit"] {
   display: block;
   float: left;
   vertical-align: top;
-  margin: 0.2rem 0.75rem 0.5rem 0; }
+  margin: .2rem .75rem .5rem 0; }
 
 .comment-metadata {
   display: block;
@@ -602,7 +601,7 @@ input[type="submit"] {
 .event-details {
   position: relative;
   margin-bottom: 1.642857143rem;
-  padding: 0.8rem 0.71429rem;
+  padding: .8rem .714285714rem;
   border: 1px dashed #fff; }
   .upcoming-event:nth-child(even),
   .event-details:nth-child(even) {
@@ -610,7 +609,7 @@ input[type="submit"] {
 
 .upcoming-event-type {
   display: block;
-  padding: 0 0 0.25em 0.35em;
+  padding: 0 0 .25em .35em;
   font-size: 1.285714286rem;
   line-height: 1;
   font-weight: 900;

@@ -17,8 +17,9 @@
 }
 
 label {
-	display: none;
+	display: block;
 	margin-bottom: .5rem;
+    font-weight: bold;
 
 	.gfield_radio &,
 	.gfield_checkbox & {
@@ -27,6 +28,9 @@ label {
 	}
 }
 
+li li label{
+  font-weight: normal;
+}
 input,
 textarea {
 	width: 100%;
@@ -34,7 +38,7 @@ textarea {
 	padding: .75rem;
 	background-color: #202c31;
 	color: #fff;
-	border-radius: .62rem;
+	border-radius: 0;
 	font-size: 1rem;
 	font-weight: 500;
 
